@@ -62,6 +62,26 @@ $(document).ready(function(){
 </script>
 <!-- Smooth Scroll Script Ends -->
 
+
+
+<!-- 4 Box Fade In & Fade Out Script Starts -->
+<script>
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>150)
+     {
+        $('#fade1').fadeOut();
+     }
+    else
+     {
+      $('#fade1').fadeIn();
+     }
+ });
+</script>
+<!-- 4 Box Fade In & Fade Out Script Ends -->
+
+
+
 <!-- Footer at Bottom Starts -->
 <link rel="stylesheet" type="text/css" href="css/footerbottomstyle.css" />
 
@@ -82,12 +102,12 @@ $(document).ready(function(){
 <div class="section" id="wrapper"> 
   
   <!-- id = Header Block Starts (Used for Footer to land on the page bottom -->
-  <div id="header"> 
+  <div id="header" style="position: fixed; width: 100%; top: 0px; z-index:9999;"> 
     
     <!--For Logo & FB, Sign, Open acc Icons Starts -->
     <div class="container-fluid brandcolorWhite">
       <div class="container">
-        <div class="row"> 
+        <div class="row" style="margin-top:10px;"> 
           <!--Logo-->
           <div class="col-md-6"> <img src="images/WinpamojaLogoSmall.png" class="img-responsive"> </div>
           <!--FB, Sign, Open acc Icons-->
@@ -102,7 +122,7 @@ $(document).ready(function(){
       <div class="container">
         <div class="row brandcolor"> 
           <!-- 4 Square Boxes -->
-          <div class="col-md-5">
+          <div id='fade1' class="col-md-5">
             <div class="boxes4"> <a href="home.html">
               <div class="box box1 text-center"> <i class="fa fa-sign-in fa-3x fa-inverse"></i> <br>
                 <span>Sign In</span></div>
@@ -118,8 +138,9 @@ $(document).ready(function(){
               </a> </div>
           </div>
           
+          
           <!-- Menu Starts -->
-          <div class="col-md-7 brandcolor">
+          <div class="col-md-7 brandcolor" style="float:right;">
             <div id='cssmenu'>
               <ul>
                 <li class="active"><a href='#'>Home</a></li>
@@ -157,7 +178,7 @@ $(document).ready(function(){
   <!-- id = Header Block Ends (Used for Footer to land on the page bottom --> 
   
   <!-- Content Block Starts (Used for Footer to land on the page bottom -->
-  <div id="content"> 
+  <div id="content" style="margin-top:100px;"> 
     
     <!-- Slider Starts -->
     <div class="container-fluid"> 
@@ -249,6 +270,7 @@ $(document).ready(function(){
     </div>
     <!-- Ad1 Ends --> 
     
+    
     <!-- Ad2 Starts -->
     <div class="container-fluid brandcolorBlue">
       <div class="container">
@@ -271,6 +293,7 @@ $(document).ready(function(){
       </div>
     </div>
     <!-- Ad2 Ends --> 
+    
     
     <!-- Ad3 Starts -->
     <div class="container-fluid brandcolorWhite">
@@ -299,11 +322,13 @@ $(document).ready(function(){
     </div>
     <!-- Ad3 Ends --> 
     
+    
     <!-- Ad4 Starts -->
     <div class="container-fluid brandcolor" style="padding-left:0; padding-right:0;">
       <div><a href="#"> <img class="img-responsive" src="images/LaptopWomen.jpg" width="1520" height="700"></a></div>
     </div>
     <!-- Ad4 Ends --> 
+    
     
     <!-- Ad5 Starts -->
     <div class="container-fluid brandcolor">
@@ -359,6 +384,7 @@ $(document).ready(function(){
       </div>
     </div>
     <!-- Ad5 Ends --> 
+    
     
     <!-- Ad6 Starts -->
     <div class="container-fluid brandcolorWhite">
