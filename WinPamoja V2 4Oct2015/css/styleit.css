@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Brand colouring begins */
+.brandcolor {
+	background:#f07f1d; /* Near ICI */
+}
+.brandcolorHD {
+	background:#d00202; /* Near HDF - Not Used*/
+}
+.brandcolorBlue {
+	background:#0771ad; /* Blue*/
+	color:#FFF;			/*White TXT */
+}
+.brandcolorGreen {
+	background:#87995D; /* Dark Green*/
+	color:#FFF;			/*White TXT */
+}
+.brandcolorWhite {
+	background:#FFF; /* White*/
+}
+/* Brand colouring ends */
+
+/*4 Square Styles Begins*/
+/* Main Box Holder Style */ 
+.boxes4 {
+	top: 20px;
+	left: 100px;
+	position:absolute;
+	
+	/*width: 202px;*/
+	/*height: 202px;*/
+	/*background: #ff0000;*/
+	z-index: 1;
+}
+
+/* Common Style for 4 Boxes */
+.box {
+	padding-top:15px;
+	width: 100px;
+	height: 100px;
+    background: #f07f1d;
+	/*opacity:0.8;*/
+	/*filter: alpha(opacity=40); /* For IE8 and earlier */
+	border: 2px solid #FFF;
+	color:#FFF;
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	line-height:2em;
+}
+
+/* Box 1 Style */
+.box1 {
+	top: 0px;
+	left: 0px;
+    z-index: 2;
+}
+
+/* Box 2 Style */
+.box2 {
+	top: 0px;
+	left: 102px;
+    z-index: 3;
+}
+
+/* Box 3 Style */
+.box3 {
+	top: 102px;
+	left: 0px;
+    z-index: 4;
+}
+
+/* Box 4 Style */
+.box4 {
+	top: 102px;
+	left: 102px;
+    z-index: 5;
+}
+/*4 Square Styles Ends*/
+
+/*Adjustment down for FB, SignIn, New Acc Icons */
+.adj-down {
+	padding-top:10px;
+}
+
+/*Footer Style Starts*/
+.brandfooter {
+	line-height:3em;
+	color:#FFF;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:12px;
+	
+	/*position: fixed;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+}
+/*Footer Style Ends*/
+
+
+IMG.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+	
+	
+/* Over riding of Bootstrap CSS Starts */
+.section {
+  padding: 10px 0;
+}
+/* Over riding of Bootstrap CSS Ends */

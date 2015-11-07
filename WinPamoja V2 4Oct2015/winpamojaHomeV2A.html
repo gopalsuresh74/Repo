@@ -1,0 +1,592 @@
+<html>
+<!--Header Starts-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+<!--<link href='https://fonts.googleapis.com/css?family=Lobster:400,500' rel='stylesheet' type='text/css'>-->
+
+<!-- Menu Starts -->
+<link href="css/menustyles.css" rel="stylesheet" type="text/css">
+<script src="js/menuscript.js"></script>
+<!-- Menu Ends -->
+
+<!-- Slider Starts -->
+<!--<script src="http://code.jquery.com/jquery.js"></script>--><!-- Since jquery.min.js is used before, this is not needed here-->
+<script src="js/skdslider.min.js"></script>
+<!--<script src="js/skdslider.js"></script>-->
+
+<link href="css/skdslider.css" rel="stylesheet">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({delay:7000, animationSpeed: 1000,showNextPrev:true,showPlayButton:true,autoSlide:true,animationType:'fading'});
+			jQuery('#demo2').skdslider({delay:7000, animationSpeed: 1000,showNextPrev:true,showPlayButton:false,autoSlide:true,animationType:'sliding'});
+			jQuery('#demo3').skdslider({delay:7000, animationSpeed: 1000,showNextPrev:true,showPlayButton:true,autoSlide:true,animationType:'fading'});
+			
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			  $(window).trigger('resize');
+			});
+			
+		});
+</script>
+<!-- Slider Ends -->
+
+<!-- Smooth Scroll Script Starts -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    //event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 500, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+});
+</script>
+<!-- Smooth Scroll Script Ends -->
+
+<!-- Footer at Bottom Starts -->
+<link rel="stylesheet" type="text/css" href="css/footerbottomstyle.css" />
+
+<!--[if lt IE 7]>
+		<style type="text/css">
+			#wrapper { height:100%; }
+		</style>
+	<![endif]-->
+
+<!-- Footer at Bottom Ends -->
+
+<link href="css/styleit.css" rel="stylesheet" type="text/css">
+</head>
+<!--Header Ends-->
+
+<!--Body Starts-->
+<body>
+<div class="section" id="wrapper"> 
+  
+  <!-- id = Header Block Starts (Used for Footer to land on the page bottom -->
+  <div id="header"> 
+    
+    <!--For Logo & FB, Sign, Open acc Icons Starts -->
+    <div class="container-fluid brandcolorWhite">
+      <div class="container">
+        <div class="row"> 
+          <!--Logo-->
+          <div class="col-md-6"> <img src="images/WinpamojaLogoSmall.png" class="img-responsive"> </div>
+          <!--FB, Sign, Open acc Icons-->
+          <div class="col-md-6 text-right adj-down"> <a href="http://www.facebook.com/"><i class="fa fa-2x fa-facebook-square fa-fw"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-2x fa-fw fa-sign-in"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-2x fa-fw fa-user-plus"></i></a> </div>
+        </div>
+      </div>
+    </div>
+    <!--For Logo & FB, Sign, Open acc Icons Ends --> 
+    
+    <!-- For 4 Square Boxes and Menu Starts -->
+    <div class="container-fluid brandcolor">
+      <div class="container">
+        <div class="row brandcolor"> 
+          <!-- 4 Square Boxes -->
+          <div class="col-md-5">
+            <div class="boxes4"> <a href="home.html">
+              <div class="box box1 text-center"> <i class="fa fa-sign-in fa-3x fa-inverse"></i> <br>
+                <span>Sign In</span></div>
+              </a> <a href="home1.html">
+              <div class="box box2 text-center"> <i class="fa fa-user-plus fa-3x fa-inverse"></i> <br>
+                <span>Add Account</span></div>
+              </a> <a href="#">
+              <div class="box box3 text-center"> <i class="fa fa-comments-o fa-3x fa-inverse"></i> <br>
+                <span>Refer a Friend</span></div>
+              </a> <a href="#">
+              <div class="box box4 text-center"> <i class="fa fa-question-circle fa-3x fa-inverse"></i> <br>
+                <span>FAQ</span></div>
+              </a> </div>
+          </div>
+          
+          <!-- Menu Starts -->
+          <div class="col-md-7 brandcolor">
+            <div id='cssmenu'>
+              <ul>
+                <li class="active"><a href='#'>Home</a></li>
+                <li><a href='#LinkPayBill'>Pay Bill</a></li>
+                <li><a href='#'>Insurance</a></li>
+                <!--<li><a href='#'>Products</a>
+              <ul>
+                 <li><a href='#'>Product 1</a>
+                    <ul>
+                       <li><a href='#'>Sub Product</a></li>
+                       <li><a href='#'>Sub Product</a></li>
+                    </ul>
+                 </li>
+                 <li><a href='#'>Product 2</a>
+                    <ul>
+                       <li><a href='#'>Sub Product</a></li>
+                       <li><a href='#'>Sub Product</a></li>
+                    </ul>
+                 </li>
+              </ul>
+           </li>-->
+                <li><a href='#'>FAQ</a></li>
+                <li><a href='#LinkReferFrnd'>Refer a Friend</a></li>
+                <li><a href='#LinkContact'>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Menu Ends --> 
+        </div>
+      </div>
+    </div>
+    <!-- For 4 Square Boxes and Menu Ends --> 
+    
+  </div>
+  <!-- id = Header Block Ends (Used for Footer to land on the page bottom --> 
+  
+  <!-- Content Block Starts (Used for Footer to land on the page bottom -->
+  <div id="content"> 
+    
+    <!-- Slider Starts -->
+    <div class="container-fluid"> 
+      <!--<div class="container">-->
+      <div class="row">
+        <div class="col-md-12" style="padding-left:0; padding-right:0;">
+          <div class="skdslider">
+            <ul id="demo1" class="slides">
+              <!-- Use id="demo1" for Fading and id="demo2" for Sliding effects -->
+              <li> <img src="images/slides/0.jpg" />
+                <div class="slide-desc">
+                  <h2>WIN Pay Bill</h2>
+                   <p>Discover how Easy Bill Pay can be...</p>
+                  <p class="text-right"><a href="#">
+                    <button type="button" class="btn btn-danger btn-sm">Explore it...</button>
+                    </a></p>
+                </div>
+              </li>
+              <li> <img src="images/slides/1.jpg" />
+                <div class="slide-desc">
+                  <h2>Pay Bills in Kenya - SIMPLE . SMART . SECURE .</h2>
+                  <p>It’s a NEW Solution for Diaspora to Pay Bills in Kenya, Using WIN Pay Bill</p>
+                  <p class="text-right"><a href="#">
+                    <button type="button" class="btn btn-danger btn-sm">Open New Account</button>
+                    </a></p>
+                </div>
+              </li>
+              <li> <img src="images/slides/2.jpg" />
+                <div class="slide-desc">
+                  <h2>Simplified bill pay in Kenya</h2>
+                  <p>Pay service providers directly without disturbing your family or friends.</p>
+                  <p class="text-right"><a href="#">
+                    <button type="button" class="btn btn-danger btn-sm">Join Now</button>
+                    </a></p>
+                </div>
+              </li>
+              <li> <img src="images/slides/3.jpg" />
+                <div class="slide-desc">
+                  <h2>Hassle free payments</h2>
+                  <p>Pay by popular payment options like Cheques, Bank Transfers, M-Pesa…</p>
+                  <p class="text-right"><a href="#">
+                    <button type="button" class="btn btn-danger btn-sm">Join Now</button>
+                    </a></p>
+                </div>
+              </li>
+              <li> <img src="images/slides/4.jpg" />
+                <div class="slide-desc">
+                  <h2>Payment Tracking and Recording Options</h2>
+                  <p>Keep record of all your payments, Schedule future payments in advance, Always be prepared to pay emergency bills</p>
+                  <p class="text-right"><a href="#">
+                    <button type="button" class="btn btn-danger btn-sm">Quick Start Now !</button>
+                    </a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--</div>--> 
+    </div>
+    <!-- Slider Ends -->
+    
+    <!-- Link For Smooth Scroll Start-->
+    <div id="LinkPayBill"></div>
+    <!-- Link For Smooth Scroll Ends--> 
+    
+    <!-- Ad1 Starts -->
+    <div class="container-fluid brandcolorWhite">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"> <img src="images/HappyWomen.jpg" class="img-responsive"> </div>
+          <div class="col-md-6"> <br>
+            <h1 class="text-primary">Pay Bills in Kenya</h1>
+            <br>
+            <h2><small><i class="fa fa-star-o"></i></small>&nbsp;&nbsp;&nbsp;SIMPLE&nbsp;&nbsp;&nbsp; <small><i class="fa fa-star-o"></i></small>&nbsp;&nbsp;&nbsp;SMART&nbsp;&nbsp;&nbsp; <small><i class="fa fa-star-o"></i></small>&nbsp;&nbsp;&nbsp;SECURE</h2>
+            <br>
+            <h3>It’s the <br>
+              <b>NEW PAY BILL SOLUTION</b><br>
+              for Diaspora to pay bills in Kenya</h3>
+            <br>
+            <h3>Discover how <br>
+              <b>EASY BILL PAY</b><br>
+              can be use WIN Pay Bill</h3>
+            <span class="text-right"><a href="#">
+            <button type="button" class="btn btn-danger btn-lg">Join Now</button>
+            </a></span> <br><br></div>
+        </div>
+      </div>
+    </div>
+    <!-- Ad1 Ends --> 
+    
+    <!-- Ad2 Starts -->
+    <div class="container-fluid brandcolorBlue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"> <img src="images/TypingWomen.jpg" class="img-responsive"> </div>
+          <div class="col-md-6"> <br>
+            <h4><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;<span class="text-info">Simplify bill pay in</span> Kenya</h4>
+            <br>
+            <h4><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;<span class="text-info">Payment options including </span>Cheques, Bank Transfers, M-Pesa...</span></h4>
+            <br>
+            <h4><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;<span class="text-info">Pay your service providers without </span> disturbing your family &amp; friends</h4>
+            <br>
+            <h4><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;Keep record<span class="text-info"> of all your payments</span></h4>
+            <br>
+            <h4><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;Schedule payments <span class="text-info">in advance</span></h4>
+            <br>
+            <h4><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;<span class="text-info">Always be prepared to pay</span> Emergency bills&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><button type="button" class="btn btn-danger btn-lg">Apply Now</button></a></h4> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ad2 Ends --> 
+    
+    <!-- Ad3 Starts -->
+    <div class="container-fluid brandcolorWhite">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4"> <img src="images/Addition.jpg" class="img-responsive"> </div>
+          <div class="col-md-8"> <br>
+            <br>
+            <h2 style="line-height:1.5">WIN Account is linked to payment form,<br>
+              hence payment instructions are <br>
+              <i>simple</i> and <i>organized.</i></h2>
+            <br>
+            <h2 style="line-height:1.5">So do away with complicated bill payments. <br>
+              Use <b>SIMPLE, SMART AND ORGANIZED</b><br>
+              bill pay through <i>WIN Pamoja.</i></h2>
+            <br>
+            <br>
+            <p><a href="#">
+              <button type="button" class="btn btn-danger btn-md">Join Now</button>
+              </a></p>
+            
+            <!--<h4><i class="fa fa-anchor"></i>&nbsp;&nbsp;&nbsp;Always be prepared to pay Emergency bills</h4>--> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ad3 Ends --> 
+    
+    <!-- Ad4 Starts -->
+    <div class="container-fluid brandcolor" style="padding-left:0; padding-right:0;">
+      <div><a href="#"> <img class="img-responsive" src="images/LaptopWomen.jpg" width="1520" height="700"></a></div>
+    </div>
+    <!-- Ad4 Ends --> 
+    
+    <!-- Ad5 Starts -->
+    <div class="container-fluid brandcolor">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1><br>
+              Pay Bill that just keeps getting<span class="text-inverse"> BETTER</span> and <span class="text-inverse"> BETTER.</span></h1>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-3"> <i class="fa fa-5x fa-map-marker"></i>
+            <h2 class="text-inverse">Pay to any Location in<i> Kenya</i></h2>
+          </div>
+          <div class="col-md-3"> <i class="fa fa-5x fa-clock-o fa-inverse"></i>
+            <h2>Pay any time and get<i> Confirmation</i></h2>
+          </div>
+          <div class="col-md-3"> <i class="fa fa-5x fa-money"></i>
+            <h2 class="text-inverse">Best and Easy <i>Payment Methods</i></h2>
+          </div>
+          <div class="col-md-3"> <i class="fa fa-5x fa-lock fa-inverse"></i>
+            <h2><i>Fast and Secure</i> processing</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"><br>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-3"> <i class="fa fa-5x fa-thumb-tack"></i>
+            <h2 class="text-inverse">Keep track of payment<i> Records</i></h2>
+          </div>
+          <div class="col-md-3"> <i class="fa fa-5x fa-phone fa-inverse"></i>
+            <h2>24/7 Customer Support</h2>
+          </div>
+          <div class="col-md-3"> <i class="fa fa-5x fa-gamepad"></i>
+            <h2 class="text-inverse">Full control over payments</h2>
+          </div>
+          <div class="col-md-3"> <i class="fa fa-5x fa-arrows  fa-inverse"></i>
+            <h2><i>Large Network </i>to reach more</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12"><br>
+            <p class="text-center"><a href="#">
+              <button type="button" class="btn btn-default btn-lg">Join Now</button>
+              </a></p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ad5 Ends --> 
+    
+    <!-- Ad6 Starts -->
+    <div class="container-fluid brandcolorWhite">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1><br>
+              Various payment <span class="text-warning"><b>OPTIONS</b></span> are available anytime… </h1>
+            <br>
+            <br>
+          </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid brandcolorWhite">
+        <div class="row">
+          <div class="col-md-12 text-center" style="padding-left:0; padding-right:0;">
+            <img src="images/Keyboard.jpg" class="img-responsive"><br>
+          </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid brandcolorWhite">
+    	<div class="row">
+        	<div class="col-md-12">
+            	 <p class="text-center"><a href="#"><button type="button" class="btn btn-danger btn-lg">Join Now</button>
+              </a></p><br>
+            </div>
+        </div>  
+    </div>
+    <!-- Ad6 Ends -->
+    
+
+    <!-- Ad7 Starts -->
+    <div class="container-fluid brandcolorBlue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>
+              Pay Bill to any <i>SERVICE PROVIDER</i> &nbsp;&nbsp;<button type="button" class="btn btn-danger btn-lg">Join Now</button></h1>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 text-center">
+            <h2>Healthcare</h2>
+          	<img src="images/Health.jpg" class="img-responsive img-circle imgcenter"><br>
+            <p>Medicine, Hospital Bills ...</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Education</h2>
+            <img src="images/Edu.jpg" class="img-responsive img-circle imgcenter"><br>
+            <p>School Fees, Books, Uniforms...</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Utlities</h2>
+            <img src="images/Utl.jpg" class="img-responsive img-circle imgcenter"><br>
+            <p>Kenya Power, Water...</p>
+          </div>
+		</div>
+        
+        <div class="row text-center"><br></div>
+        
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h2>Salaries</h2>
+            <img src="images/Sal.jpg" class="img-responsive img-circle imgcenter"><br>
+            <p>Pay salaries to your workers...</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Telephone</h2>
+            <img src="images/Tel.jpg" class="img-responsive img-circle imgcenter"><br>
+            <p>Telephone Bill, Mobile Bills...</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Transfers</h2>
+            <img src="images/Trans.jpg" class="img-responsive img-circle imgcenter"><br>
+            <p>Fund Transfer, Deposit Transfer...</p>
+          </div>
+          
+        </div>
+        
+        
+        <div class="row">
+          <div class="col-md-12"><br>
+            <p class="text-center"><a href="#">
+              <button type="button" class="btn btn-danger btn-lg">Apply Now</button>
+              </a></p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ad7 Ends --> 
+  
+
+    <!-- Link For Smooth Scroll Start-->
+    <div id="LinkReferFrnd"></div>
+    <!-- Link For Smooth Scroll Ends--> 
+
+
+	<!-- Refer a Friends Starts -->
+    <div class="container-fluid brandcolorWhite">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>Refer a Friend and get <span class="text-warning"><b>REWARDED !!!</b></span></h1>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 text-center">
+          	<img src="images/friends.jpg" class="img-responsive img-thumbnail imgcenter">
+          </div>
+          <div class="col-md-6">
+            <h2>More Bill Pay Options</h2>
+            <h2>Let your friends enjoy organized<br> Bill Pay in Kenya.</h2>
+			<h3>Introduce your friends to</h3>
+			<h3><a href="#">www.winpamoja.com</a></h3>
+			<h3>How ? All with just one click.</h3><br>
+			<div class="col-md-8 col-xs-offset-2">
+                <form role="form">
+                <div class="form-group input-group">
+                <input type="email" class="form-control" id="youremail" placeholder="Enter your email">
+                <span class="input-group-addon" id="sizing-addon11">@</span>
+                </div>
+                <div class="form-group input-group">
+                <input type="email" class="form-control" id="friendemail" placeholder="Enter your friend's email">
+                <span class="input-group-addon" id="sizing-addon12">@</span>
+                </div>
+                <button type="submit" class="btn btn-danger">Invite friend</button>
+                </form>
+			</div>
+                
+          </div>
+          
+		</div>
+      </div>
+    </div>
+    <!-- Refer a Friends Ends --> 
+
+
+    <!-- Link For Smooth Scroll Start-->
+    <div id="LinkContact"></div>
+    <!-- Link For Smooth Scroll Ends--> 
+
+	<!-- Map Starts -->
+    <div class="container-fluid">
+	    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1><span class="text-primary">Get in Touch with</span> WIN Pamoja</h1>
+            <br>
+            <br>
+          </div>
+    	</div>
+        <div class="row">
+            <div class="col-md-12 text-center" style="padding-left:0; padding-right:0;">
+                <!--<img src="images/map.jpg" class="img-responsive img-thumbnail imgcenter">-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7905804288266!2d36.7871189143254!3d-1.300504936007608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109bc4842189%3A0xd973a345ed0893e1!2sFriends+International+Centre%2C+Ngong+Rd%2C+Nairobi+City%2C+Kenya!5e0!3m2!1sen!2sin!4v1446633875967" width="100%" height="450" frameborder="0" style="border:1" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Map Ends --> 
+
+	<!-- Contact Us Starts -->
+    <div class="container">        
+        <div class="row">
+        	<div class="col-md-4">
+	            <h3>Address</h3>
+                <h5><b><i>Office Location</i></b></h5>
+                <h4>Friends International Center, <br><br>Ngong Rd, Nairobi, Kenya</h4><br>
+                <h5><b><i>Postal Details</i></b></h5>
+                <h4>P.O. Box 24001-00100,<br><br> Nairobi, Kenya</h4>
+            </div>
+            <div class="col-md-4">
+            <h3>Contact Form</h3>
+            		<form role="form">
+                    <div class="form-group input-group">
+                    <input type="text" class="form-control" id="contname" placeholder="Enter your Name">
+                    <span class="input-group-addon" id="sizing-addon1">N</span>
+                    </div>
+                    <div class="form-group input-group">
+                    <input type="email" class="form-control" id="contemail" placeholder="Enter your email">
+                    <span class="input-group-addon" id="sizing-addon2">E</span>
+                    </div>
+                    
+                    <div class="form-group input-group">
+                    <textarea class="form-control" rows="5" id="contmsg" placeholder="Enter your Message"></textarea>
+                    <span class="input-group-addon" id="sizing-addon3">M</span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-danger">SEND</button>
+                    <br><br>
+                    </form>
+            </div>
+            <div class="col-md-4 text-center">
+		        <h3>Quick Links</h3>
+                <br><br>
+                <h5><a href="#"><button type="button" class="btn btn-success btn-lg">Click to call Me</button></a></h5>
+                <br>
+                <p><a href="#"><button type="button" class="btn btn-primary btn-sm"><i class="fa fa-facebook"></i></button></a>&nbsp;&nbsp;&nbsp;<a href="#"><button type="button" class="btn btn-primary btn-sm"><i class="fa fa-twitter"></i></button></a>&nbsp;&nbsp;&nbsp;<a href="#"><button type="button" class="btn btn-primary btn-sm"><i class="fa fa-youtube"></i></button></a></p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Contact Us Ends --> 
+
+
+
+  </div>
+  <!-- Id = content Block Ends (Used for Footer to land on the page bottom --> 
+  
+  <!-- Id = footer Block Starts ( Used for footer land on bottom of page ) -->
+  <div id="footer"> 
+    <!-- Footer Starts -->
+    <div class="container-fluid">
+      <div class="row brandcolor brandfooter">
+        <div class="col-md-6 text-center">Home | Pay Bill | Plan Money | Contact Us | FAQ | Refer a Friend</div>
+        <div class="col-md-6 text-center">Copyright 2015 - All Rights Reserved - WinPamoja</div>
+      </div>
+    </div>
+    <!-- Footer Ends --> 
+  </div>
+  <!-- Id = footer Block ends( Used for footer land on bottom of page ) --> 
+  
+</div>
+<!-- Section class Ends & Id = wrapper ends( Used for footer land on bottom of page ) -->
+</body>
+<!--Body Ends-->
+</html>
